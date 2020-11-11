@@ -33,13 +33,13 @@ describe("API Routes", () => {
   // Read
   // GET /api/todos
   describe("GET /api/todos", () => {
-    it("should return a 200 status", () => {
-            // arrange/act
+    it("should return a 200 status", async () => {
+      // arrange/act
       const { status } = await axios.post("/api/todos");
       console.log(status);
       // assert
       expect(status).toBe(200);
-    })
+    });
   });
   // GET /api/todos/:id
 });
