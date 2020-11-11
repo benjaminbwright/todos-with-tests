@@ -22,7 +22,6 @@ describe("API Routes", () => {
         text: "Buy CDs",
       };
       const { data } = await axios.post("/api/todos", newTodo);
-      console.log(data);
       const isObject = typeof data === "object";
 
       // assert
