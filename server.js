@@ -31,6 +31,9 @@ app.post("/api/todos", (req, res) => {
   res.json(todo);
 });
 // Read
+app.get("/api/todos", (req, res) => {
+  res.json(todos);
+});
 // Update
 // Delete
 
